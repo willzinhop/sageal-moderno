@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    height: 600px;
+    width: 100%;
+    background-color: #022656;
+}
+
+.usuario{
+    width: 11.2%;
+    height: 2.8vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 1%;
+    padding-right: 8%;
+    margin-right: 150px;
+    margin-top: -55px;
+    align-items: center;
+    
+
+}
+select{
+    margin-left: 1200px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.sair{
+     margin-left: 820px;
+     margin-right: 100px;
+     margin-top: -24px;
+     padding: 10px;
+     width: 115px;
+     text-align: center;
+     border-radius: 5px;
+     background-color: grey;
+}
+
+.sair a{
+    text-decoration: none;
+    color: aliceblue;
+    display: inline;
+}
+
+    
+.logo{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+.lista1{
+    margin-left: 270px;
+    margin-top: -210px;
+    width: 1200px;
+}
+.lista1 input{
+    height: 30px;
+    background-color: burlywood;
+}
+.lista2{
+    margin-left: 270px;
+    margin-top: 15px;
+    width: 1200px;
+}
+.lista2 input{
+    height: 30px;
+}
+.lista3{
+    margin-left: 270px;
+    margin-top: 15px;
+    width: 1200px;
+}
+.lista3 input{
+    height: 30px;
+    background-color: burlywood; 
+}
+.lista4{
+    margin-left: 270px;
+    margin-top: 15px;
+    width: 1200px;
+}
+.lista4 input{
+    height: 30px;
+}
+.lista5{
+    margin-left: 270px;
+    margin-top: 15px;
+    width: 1200px;
+}
+.lista5 input{
+    height: 30px;
+    background-color: burlywood; 
+}
+h1{
+    margin-left: 700px;
+    margin-top: 80px;
+    color: aliceblue;
+}
+h3{
+    margin-top: 50px;
+    margin-left: 100px;
+    color: aliceblue;
+}
+.sem2{
+    margin-top: 25px;
+}
+.sem3{
+    margin-top: 25px;
+}
+.sem4{
+    margin-top: 25px;
+}
+.sem5{
+    margin-top: 25px;
+}
+.salvar{
+    margin-left: 700px;
+    margin-top: -15px;
+    width: 200px;
+}
+.salvar a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+.limpar{
+    margin-left: 580px;
+    margin-top: 140px;
+    width: 200px;
+}
+.limpar a{
+    text-decoration: none;
+    color: aliceblue;
+    background-color:grey;
+    padding: 10px;
+    border-radius: 5px;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    height: 500px;
+    width: 100%;
+    border: white;
+    background-color: #022656;
+ }
+h2{
+    color: white;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+.aluno img{
+    margin-left: 870px;
+}
+.transitionSize{
+    transition: transform 0.5s;
+}
+.transitionSize:hover{
+    transform: scale(1.02);
+}
+form{
+    background-color: #519AC4;
+    max-width: 800px;
+    height: 450px;
+    padding: 40px;
+    margin-left: 70px;
+    margin-top: -495px;
+    border-radius: 20px;
+    opacity: 0.89;
+}
+.sair{
+    margin-top: 50px;
+    margin-left: 650px;
+    background-color: grey;
+    width: 170px;
+    padding: 4px;
+    border-radius: 5px;
+}
+.sair a{
+    display: inline;
+    margin-top: 0px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.tabela1 tr th{
+    color: rgb(237, 237, 238);
+    display: block;
+    margin-top: 0px;
+    margin-right: 1000px;
+}
+.tabela1 tr td{
+    display: block;
+    margin-top: 10px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    margin-right: 750px;
+    padding: 10px;
+}
+.tabela2 tr{
+    display: block;
+    margin-left: 330px;
+}
+.tabela2 tr th{
+    display: block;
+    margin-top: -63px;
+    color: rgb(237, 237, 238);
+}
+.tabela2 tr td{
+    display: block;
+    margin-top: 10px;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: 6.8px;
+}
+.tabela3 tr{
+    display: block;
+    margin-left: 550px;
+}
+.tabela3 tr th{
+    display: block;
+    margin-top: -65px;
+    color: rgb(237, 237, 238);
+}
+.tabela3 tr td{
+    display: block;
+    margin-top: 9px;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+.tabela4 tr{
+    display: block;
+    margin-top: 10px;
+}
+.tabela4 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    font-size: 15px;
+    margin-right: 20px;
+}
+.tabela4 tr td{
+    display: block;
+    color: black;
+    background-color: white;
+    border:  solid 1px black;
+    padding: 10px;
+    
+}
+.tabela5 tr{
+    display: block;
+    margin: 40px;
+    margin-top: 15px;
+    
+}
+.tabela5 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    margin-left: -40px;
+    font-size: 15px;
+}
+.tabela5 tr td{
+    display: block;
+    margin-top: -30px;
+    margin-left: -40px;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+.tabela6 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    margin-right: 40px;
+    margin-top: -20px
+}
+.tabela6 tr td{
+    display: block;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+.tabela7 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    margin-left: 280px;
+    margin-top: -220px;
+}
+.tabela7 tr td{
+    display: block;
+    margin-left: 330px;
+    margin-top: -200px;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+}
+.tabela8 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    margin-left: 560px;
+    margin-top: -220px;
+}
+.tabela8 tr td{
+    display: block;
+    color: black;
+    margin-left: 560px;
+    margin-top: -200px;
+    background-color: white;
+    border: solid 1px black;
+    padding: 10px;
+
+}
+.tabela9{
+    display: block;
+    margin-top: -50px;
+}
+.tabela9 tr th{
+    display: block;
+    color: rgb(237, 237, 238);
+    margin-top: -100px;
+    margin-left: 470px;
+    background-color: rgb(163, 13, 13);
+    border: solid 1px black;
+    padding: 10px;
+}
+.tabela9 tr .td1{
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-left: 470px;
+    margin-top: -50px;
+}
+.tabela9 tr .td2{
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 470px;
+}
+.tabela9 tr .td3{
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-left: 470px;
+}
+.tabela9 tr .td4{
+    display: block;
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-left: 470px;
+}
+.tabela9 tr td{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.786);
+    padding: 3px;
+    
+}

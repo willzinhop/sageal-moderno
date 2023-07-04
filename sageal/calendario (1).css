@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    height: 500px;
+    width: 100%;
+    background-color: #022656;
+}
+select{
+  margin-left: 1200px;
+  margin-top: 100px;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.sair{
+ margin-left: 700px;
+ margin-top: 30px;
+}
+
+.sair a{
+  display: inline;
+  text-decoration: none;
+  color: aliceblue;
+  width: 190px;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 200px;
+    display: block;
+    
+    width: 700px;
+    
+    font-size: 20px;
+    
+   
+  
+  }
+  table th{
+    width: 300px;
+    font-size: 15px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  td{
+    background-color: aliceblue;
+  }
+  th {
+    background-color: rgb(0, 98, 255);
+    color: white;
+  }
+  td:hover {
+    background-color: rgba(121, 121, 131, 0.789);
+  }
+
+  .cale{
+    
+    display: block;
+    margin-left: -450px;
+    margin-top: 60px;
+    text-align: center;
+    color:  rgba(255, 255, 255, 0.982);
+
+  }
+
+  .eventos{
+    background-color: green;
+    color: aliceblue;
+  }
+  .eventos:hover{
+    background-color: green;
+  }
+  
+
+  .sab{
+    background-color: rgba(236, 28, 28, 0.9);
+    color: aliceblue;
+  }
+  .sab:hover{
+    background-color: rgba(236, 28, 28, 0.9);
+  }
+
+  p{
+    margin-top: 700px;
+    margin-left: 300px;
+    display: inline-block;
+  }
+  .logo{
+    margin-top: -70px;
+    margin-left: 70px;
+  }
+  h3{
+    display: block;
+    margin-left: 970px;
+    margin-top: -100px;
+    color: antiquewhite;
+  }
+  .h1{
+    margin-top: -70px;
+  }
+  p{
+    display: block;
+    margin-top: 280px;
+    margin-left: 10px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 18px;
+    text-decoration: underline;
+  }
