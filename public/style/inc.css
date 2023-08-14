@@ -1,0 +1,167 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    box-sizing: border-box;
+}
+ body{
+    height: 700px;
+    width: 100%;
+    background-color: #022656;
+    position: absolute;
+ }
+
+
+.container{
+    width: 100%;
+    height: 10vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.plano{
+    margin-top: -74px;
+    margin-left: 100px;
+}
+.plano img{
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.boletim{
+    margin-left: 100px;
+    margin-top: 10px;
+   
+}
+.boletim img{
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.eventos{
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.eventos img{
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.cal{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.cal img{
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.horario{
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.horario img{
+    border-radius: 10px;
+    border: solid 2px white;
+}
+.dados{
+    margin-left: 350px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: solid 2px white;
+    width: 205px;
+}
+/*
+.button{
+    background-color: white;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-left: 500px;
+    color: white;
+    font-size: 158px;
+    left: 30opx;
+}
+*/
+nav{
+    flex: 1;
+    text-align: center;
+    margin-left: 700px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    color: #ffffff;
+    padding: 0px 10px;
+    
+    
+    
+
+}
+nav ul li:hover, button:hover{
+    background-color: #ff0000;
+    
+    
+    
+}
+
+.usuario{
+    width: 11.2%;
+    height: 2.8vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 1%;
+    padding-right: 8%;
+    margin-left: 1190px;
+    margin-top: 85px;
+    align-items: center;
+    
+
+}*
+.usuario select{
+    display: block;
+    height: 30px;
+    border-radius: 5px;   
+    width: 190px;
+    
+}
+.transitionBackground{
+    transition: background-color 0.5s;
+}
+.transitionBackground:hover{
+    background-color: #ff0000;
+}
+.transitionSize{
+    transition: transform 1s;
+}
+.transitionSize:hover{
+    transform: scale(1.01);
+
+}
+
+
+.logo{
+    margin-top: -50px;
+    margin-left: 70px;
+}
+.border{
+    border-radius:10%;
+}
+.slides{
+    margin-left: 700px;
+    margin-top: -420px;
+}
+

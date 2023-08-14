@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    height: 450px;
+    width: 1330px;
+    background-color: #022656;
+}
+
+.sair{
+   display: block;
+   margin-top: 70px;
+   margin-left: 630px;
+
+   width: 10px;
+}
+.sair a{
+    text-decoration: none;
+    display: block;
+    color: aliceblue;
+    background-color: grey;
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+
+img{
+    border-radius: 20px;
+   
+}
+
+.img1{
+    margin-top: 110px;
+    margin-left: 190px;
+}
+.img2{
+    margin-top: -330px;
+    margin-left: 470px;
+}
+.img3{
+    margin-top: -328px;
+    margin-left: 750px;
+}
+.img4{
+    margin-top: -330px;
+    margin-left: 1030px;
+}
+.transitionSize{
+    transition: transform 0.5s;
+    width: 230px;
+   
+}
+.transitionSize:hover{
+    transform: scale(1.01);
+
+}
+select{
+    display: block;
+    margin-left: 1210px;
+    margin-top: -48px;
+    border-radius: 5px;
+    height: 25px;
+    
+    width: 180px;
+    
+}
+.perfil{
+    margin-left: 1150px;
+    margin-top: -40px;
+}
+.perfil img{
+    margin-top: -50px;
+}
+.logo{
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+
