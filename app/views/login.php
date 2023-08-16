@@ -11,7 +11,7 @@
   <div class="logo">
     <a href="#"><img src="./imagens/1678492714157.png" width="230px" alt="símbolo sageal"></a>
    </div>
-    <form>
+    <form action = "" method = "POST">
 
              <!--colocar logo do sageal img-->
             <br>
@@ -21,13 +21,13 @@
             </ul>
             
               <div class="input-single">
-                <input type="text" placeholder="Login" id="login" class="input">
+                <input type="text" placeholder="Login" id="login" class="input" name = "cpf">
                 
                 
               </div>
 
               <div class="senha-de-acesso">
-                <input type="password" placeholder="Senha" id="senha" class="input" >
+                <input type="password" placeholder="Senha" id="senha" class="input" name = "senha" >
                 
               </div>
               <div class="usuario">
@@ -38,7 +38,7 @@
                     <option value="Seduc">Seduc</option>
                 </select>
             </div>
-              <input type="submit" id="btn" onclick="logar(); return false" >
+              <input type="submit" id="btn" name = "enviar" >
               <div class="mostrar">
               <input type="checkbox" onclick="mostrarOcultarsenha()">Mostrar Senha
               </div>
@@ -64,18 +64,32 @@
 
   }
 
-function logar(){
-  var login = document.getElementById('login').value;
-  var senha = document.getElementById('senha').value;
-
-  if(login == "12345678901" && senha == "12345678"){
-    location.href = "inicio.html";
-  }else{
-    
-  }
-
-}
-
 
 </script>
 </html>
+
+<?php 
+require_once("../../database/connect.php");
+  if(isset($_POST['enviar'])){
+    $cpf = mysqli_escape_string($sageal, $_POST['cpf']);
+    $senha = mysqli_escape_string($sageal, $_POST['senha']);
+    
+  
+    $sql ="SELECT * FROM aluno WHERE cpf = '$cpf' and senha = '$senha' ";
+    $consulta = mysqli_query($sageal, $sql);
+    $dados = mysqli_fetch_array($consulta);
+    if(mysqli_num_rows($consulta) == 1) {
+      
+      session_start();
+      $_SESSION['logado'] = $dados['id_usuario'];
+      header("Location: inicio.html");
+      
+    }
+    else {
+      echo("Usuário inexistente!!!");
+    }
+    
+
+  }
+  
+?>
