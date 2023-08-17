@@ -88,8 +88,7 @@ require_once("../../database/connect.php");
     else {
       echo("Usuário inexistente!!!");
     }
-    
-
+  
   }
   
 ?>

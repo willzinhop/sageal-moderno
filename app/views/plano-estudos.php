@@ -82,6 +82,11 @@
         <a href="inicio.html" title="Página Inicial.">Página inicial</a>
         </div>
         
-    
+        <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

@@ -79,13 +79,22 @@
 
     </div>
     <div class="slides">
-     
+        
          <img src="./imagens/escola10.png" width="300px" alt="Escola 10">
         
             <img src="./imagens/marco.png" width="300px" alt="Março">
             <img src="./imagens/escola10.png" width="300px" alt="Escola 10">
         
             <img src="./imagens/marco.png" width="300px" alt="Março">
+            
         </div>
+        <a href="./functions/logout.php">Logout</a>
+        
+        <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

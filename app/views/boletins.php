@@ -143,5 +143,11 @@
 <p class="obs">A nota necessária para ser aprovado no bimestre é 6. <br>
   Para calcular a média anual é realizada a soma de todas as notas dos quatro bimestres e a divisão delas por 4. <br> A nota mínima da média anual para ser aprovado também é 6.</p> -->
   -
+  <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

@@ -65,6 +65,11 @@
      <div class="sair ">
       <a href="inicio.html">Voltar a página inicial</a>
      </div>
-    
+     <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>
