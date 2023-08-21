@@ -4,7 +4,9 @@ require_once("../connect.php");
 $sql = "CREATE TABLE aluno (
     id_usuario INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     cpf VARCHAR (11),
-    senha VARCHAR (30)
+    senha VARCHAR (30),
+    email VARCHAR (50),
+    token VARCHAR (244)
 
     
 )";

@@ -42,8 +42,8 @@
               <div class="mostrar">
               <input type="checkbox" onclick="mostrarOcultarsenha()">Mostrar Senha
               </div>
-              <div class="pre-matricula">
-                <a href="#">Pré-matrícula</a>
+              <div class="esqueceu-a-senha">
+                <a href="redefinicao.php">Esqueceu a Senha</a>
               </div>
         
     </form>
