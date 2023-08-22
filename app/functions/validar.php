@@ -111,7 +111,6 @@ else if(empty($_POST['senha'])){
   echo("Por favor, preencha todos os campos");
 }
 
-
 else{
   $senha = $_POST['senha'];
   $cpf = $_POST['cpf'];
