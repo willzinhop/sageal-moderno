@@ -82,7 +82,7 @@ require_once("../../database/connect.php");
       
       session_start();
       $_SESSION['logado'] = $dados['id_usuario'];
-      header("Location: inicio.html");
+      header("Location: inicio.php");
       
     }
     else {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redifina a sua senha</title>
+    <title>Redefina a sua senha</title>
 </head>
 <body>
     <?php 
@@ -22,25 +22,43 @@
 
     
     ?>
-<form action="" method="POST">
-    <ul>
-        <li>
- <label for="novasenha">Digite sua nova senha: </label>
- <input type="text" placeholder="nova senha" name="novasenha"></input> 
- </li>
 
- <li>
+<form action = "" method = "POST">
 
- <label for="confirmesenha">Confirme sua senha: </label>
- <input type="text" placeholder="confirme sua senha" name="confirmesenha"></input>
+        <legend>Confirmação de Senha </legend>
 
- <button type="submit" name="enviar">Enviar</button>
- </li>
-</ul>
+        <input type="password" placeholder="Senha" name="senha" id="password" required>
+        <input type="password" placeholder="Confirme Senha" name="confirme" id="confirm_password" required>
+
+        <button type="submit" name="att" class="btn">Confirmar</button>
+    
 </form>
 
-<?php 
+<script>
+    var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
 
+    function validatePassword(){
+    if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Arruma a senha leigo!");
+    } else {
+        confirm_password.setCustomValidity('');
+    }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+</script>
+
+<?php 
+    $token = $_GET['token'];
+    if(isset($_POST['att'])){
+        $novasenha = $_POST['confirme'];
+        $sql = "UPDATE aluno SET senha = '$novasenha', token = '' WHERE token = $token";
+        if(mysqli_query($sageal, $sql)) {
+            header("Location:login.php");
+        }
+    }
 ?>
 
 </body>
