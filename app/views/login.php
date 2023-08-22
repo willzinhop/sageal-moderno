@@ -40,12 +40,12 @@
                     <option value="Seduc">Seduc</option>
                 </select>
             </div>
-              <input type="submit" id="btn" >
+              <input type="submit" id="btn" name = "enviar" >
               <div class="mostrar">
               <input type="checkbox"name="password">Mostrar Senha
               </div>
-              <div class="pre-matricula">
-                <a href="#">Pré-matrícula</a>
+              <div class="esqueceu-a-senha">
+                <a href="redefinicao.php">Esqueceu a Senha</a>
               </div>
         
     </form>
@@ -53,7 +53,5 @@
 
    
 </body>
-<script src="./functions/mascara.js">
-
-</script>
+<script src="./functions/mascara.js"></script>
 </html>

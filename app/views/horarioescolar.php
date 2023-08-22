@@ -34,5 +34,11 @@
     <div class="noite">
         <a href="#"><img src="./imagens/noite.png" title="Horário da noite" width="230px" alt=""></a>
     </div>
+    <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

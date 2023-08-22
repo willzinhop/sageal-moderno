@@ -102,6 +102,11 @@
     <div class="sair transitionSize">
         <a href="inicio.html">Voltar a página Inicial</a>
     </div>
-
+    <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>
