@@ -88,7 +88,7 @@
             <img src="./imagens/marco.png" width="300px" alt="Março">
             
         </div>
-        <a href="./functions/logout.php">Logout</a>
+        <a href="login.php">Logout</a>
         
         <?php 
         session_start();

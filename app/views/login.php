@@ -72,23 +72,29 @@
 require_once("../../database/connect.php");
   if(isset($_POST['enviar'])){
     $cpf = mysqli_escape_string($sageal, $_POST['cpf']);
-    $senha = mysqli_escape_string($sageal, $_POST['senha']);
+    require_once("../functions/validar.php");
+    if(validarCPF($cpf)){
+      
+      $senha = mysqli_escape_string($sageal, $_POST['senha']);
+      
     
-  
-    $sql ="SELECT * FROM aluno WHERE cpf = '$cpf' and senha = '$senha' ";
-    $consulta = mysqli_query($sageal, $sql);
-    $dados = mysqli_fetch_array($consulta);
-    if(mysqli_num_rows($consulta) == 1) {
-      
-      session_start();
-      $_SESSION['logado'] = $dados['id_usuario'];
-      header("Location: inicio.php");
-      
+      $sql ="SELECT * FROM aluno WHERE cpf = '$cpf' and senha = '$senha' ";
+      $consulta = mysqli_query($sageal, $sql);
+      $dados = mysqli_fetch_array($consulta);
+      if(mysqli_num_rows($consulta) == 1) {
+        
+        session_start();
+        $_SESSION['logado'] = $dados['id_usuario'];
+        header("Location: inicio.php");
+        
+      }
+      else{
+        echo("Login Inválido");
+      }
     }
-    else {
-      echo("Usuário inexistente!!!");
+    else{
+      echo("CPF inválido");
     }
-  
-  }
-  
+    }
+    
 ?>
