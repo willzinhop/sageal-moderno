@@ -11,7 +11,8 @@
   <div class="logo">
     <a href="#"><img src="./imagens/1678492714157.png" width="230px" alt="símbolo sageal"></a>
    </div>
-    <form action = "" method = "POST">
+    <form action="" method="post">
+      
 
              <!--colocar logo do sageal img-->
             <br>
@@ -21,13 +22,14 @@
             </ul>
             
               <div class="input-single">
-                <input type="text" placeholder="Login" id="login" class="input" name = "cpf">
+                
+                <input type="text" placeholder="Login" name="cpf" class="input" autocomplete="off" maxlength="14">
                 
                 
               </div>
 
               <div class="senha-de-acesso">
-                <input type="password" placeholder="Senha" id="senha" class="input" name = "senha" >
+                <input type="password" placeholder="Senha" name="senha" class="input" >
                 
               </div>
               <div class="usuario">
@@ -40,7 +42,7 @@
             </div>
               <input type="submit" id="btn" name = "enviar" >
               <div class="mostrar">
-              <input type="checkbox" onclick="mostrarOcultarsenha()">Mostrar Senha
+              <input type="checkbox"name="password">Mostrar Senha
               </div>
               <div class="esqueceu-a-senha">
                 <a href="redefinicao.php">Esqueceu a Senha</a>
@@ -51,21 +53,7 @@
 
    
 </body>
-<script>
 
-  function mostrarOcultarsenha(){
-
-  var senha=document.getElementById("senha");
-  if(senha.type=="password"){
-    senha.type="text";
-  }else{
-    senha.type="password";
-  }
-
-  }
-
-
-</script>
 </html>
 
 <?php 
