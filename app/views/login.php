@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="lllogin.css">
+    <link rel="stylesheet" href="../../public/style/lllogin.css">
     <title>Sageal</title>
 </head>
 <body>
   <div class="logo">
-    <a href="#"><img src="./imagens/1678492714157.png" width="230px" alt="símbolo sageal"></a>
+    <a href=""><img src="../../public/imagens/1678492714157.png" width="230px" alt="símbolo sageal"></a>
+    
    </div>
     <form action="" method="post">
       

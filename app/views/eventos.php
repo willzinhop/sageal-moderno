@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos</title>
-    <link rel="stylesheet" href="evnts (1).css">
+    <link rel="stylesheet" href="../../public/style/evnts.css">
 </head>
 
 <body>
   <div class="logo">
-    <a href="login.html"><img src="./imagens/1678492714157.png" width="230px" title="Página Inicial" alt=""></a>
+    <a href="login.php"><img src="../../public/imagens/1678492714157.png" width="230px" title="Página Inicial" alt=""></a>
   </div>
 
   <div class="perfil">
-    <img src="./imagens/perfil-logo.png" width="50px" alt="">
+    <img src="../../public/imagens/perfil-logo.png" width="50px" alt="">
   </div>
   <select name="will" id="will">
     <option value="a">Willames Paulino da Silva</option>
@@ -50,20 +50,20 @@
      </div>-->
 
     <div class="img1 transitionSize">
-      <a href="#"><img src="./imagens/feira.png" title="Feira Literária" width="230px" alt="feiraliteraria"></a>
+      <a href="#"><img src="../../public/imagens/feira.png" title="Feira Literária" width="230px" alt="feiraliteraria"></a>
     </div>
     <div class="img2 transitionSize">
-      <a href="#"><img src="./imagens/jogoss.png" title="Jogos Internos" width="230px" alt="jogosinternos"></a>
+      <a href="#"><img src="../../public/imagens/jogoss.png" title="Jogos Internos" width="230px" alt="jogosinternos"></a>
     </div>
     <div class="img3 transitionSize">
-      <a href="#"><img src="./imagens/junina.png" title="Gincana Junina" width="230px" alt="Quadrilha"></a>
+      <a href="#"><img src="../../public/imagens/junina.png" title="Gincana Junina" width="230px" alt="Quadrilha"></a>
     </div>
     <div class="img4 transitionSize">
-      <a href="#"><img src="./imagens/cons (1).png" title="Consciência Negra" width="230px" alt=""></a>
+      <a href="#"><img src="../../public/imagens/cons (1).png" title="Consciência Negra" width="230px" alt=""></a>
     </div>
 
      <div class="sair ">
-      <a href="inicio.html">Voltar a página inicial</a>
+      <a href="inicio.php">Voltar a página inicial</a>
      </div>
      <?php 
         session_start();

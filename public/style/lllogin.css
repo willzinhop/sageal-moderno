@@ -10,7 +10,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(./imagens/login-imagem.png);
+    background-image: url(../../public/imagens/loginimagem.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,6 +19,7 @@ body{
     justify-content: left; /*colocar pra o lado*/
     padding: 80px;
 }
+
 form{
     background-color: #fff;
     max-width: 500px;
