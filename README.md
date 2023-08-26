@@ -13,7 +13,7 @@ Execute-o, aperte Ctrl + F para abrir uma caixa de pesquisa e coloque "mail func
 
 3º Haverá uma linha como ";sendmail_from = me@example.com", apague o ";" e altere-o para "sendmail_from = sagealmoderno@gmail.com". (obs:"sagealmoderno@gmail.com" é o email criado para utilizar nessa aplicação);
 
-4º Haverá outra linha como ";sendmail_path", novamente apague o ";" e altere-o para "sendmail_path ="\"C:\xampp\sendmail\sendmail.exe\" -t"
+4º Haverá outra linha como ";sendmail_path", novamente apague o ";" e altere-o para "sendmail_path ="\"C:\xampp\sendmail\sendmail.exe\" -t";
 
 5º Após essas alterações, reinicie os servidores do xampp (Apache e MySQL).
 
