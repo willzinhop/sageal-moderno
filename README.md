@@ -4,7 +4,7 @@
 
 ## PHP.INI
 
-Primeiramente, direcione-se até "C:\xampp\php" e abra um arquivo nomeado como "php.ini" (em algumas extensões podem estar apenas com "php"), onde sua foto é uma engrenagem.
+Primeiramente, direcione-se até "C:\xampp\php" e abra um arquivo nomeado como "php.ini" (em algumas extensões podem estar apenas como "php"), onde sua foto é uma engrenagem.
 Execute-o, aperte Ctrl + F para abrir uma caixa de pesquisa e coloque "mail function", em seguida altere as seguintes funções: 
 
 1º Altere de smtp_port = 25 para smtp_port = 587;
@@ -30,6 +30,6 @@ Em seguida, faça as seguintes alterações:
 
 4º Em seguida haverá os seguintes campos "auth_username= e auth_password=", preencha-os com os respectivos dados "auth_username= sagealmoderno@gmail.com e auth_password= aywohhwdlsjlpwpp";
 
-5º Descendo algumas linhas, você encontrará o campo "force_sender=", altere para "force_sender=sagealmoderno@gmail.com";
+5º Descendo algumas linhas, você encontrará o campo "force_sender=", altere-o para "force_sender=sagealmoderno@gmail.com";
 
 6º Por fim, na última linha do arquivo, teremos "hostname=", acrescente "localhost", tornando-o "hostname=localhost".
