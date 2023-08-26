@@ -42,15 +42,13 @@
                 </select>
             </div>
               <input type="submit" id="btn" name = "enviar" >
-              <div class="mostrar">
-              <input type="checkbox"name="password">Mostrar Senha
-              </div>
+            
               <div class="esqueceu-a-senha">
                 <a href="redefinicao.php">Esqueceu a Senha</a>
               </div>
         
     </form>
-  
+
 
    
 </body>
