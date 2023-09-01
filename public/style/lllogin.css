@@ -7,10 +7,11 @@
     font-family: 'League Spartan', sans-serif;
 }
 
+
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(../imagens/login-imagem.png);
+    background-image: url(../../public/imagens/loginimagem.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,7 +20,12 @@ body{
     justify-content: left; /*colocar pra o lado*/
     padding: 80px;
 }
+
+
+    
+
 form{
+    
     background-color: #fff;
     max-width: 600px;
     height: 450px;
@@ -27,37 +33,50 @@ form{
     margin-top: 100px;
     margin-left: -60px;
     border-radius: 20px;
+    
+}
+#form1{
+  width: 340px;
 }
 #form1{
   width: 340px;
 }
 .input-single{
-    position: relative;
+    display: block;
     margin: 40px 0;
     bottom: 5px;
     transition: all 0.2s;
     cursor: text;
 }
 .input{
+    display: block;
     width: 100%;
     border: 0;
     border-bottom: 2px solid #ccc; 
     padding: 5px;
     font-size: 17px;
-    outline: 0;
-}/*
-.btn{
-    width: 100%;
-    text-align: center;
-    background-color: rgb(173, 40, 40);
-    padding: 15px;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    
-}*/
+    outline: 0;   
+} 
+
+
+#btn{ text-align: center; 
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        text-align: center;
+        padding: 10px 20px;
+        margin: 20px;
+        border: 1px solid #eee;
+        border-radius: 6px;
+        background-color: #e90f0f;
+        font-size: 18px;
+}
+
+
+
 
 form input[type=submit]{
+    
     padding: 20px 40px;
     border: 0;
     border-radius: 10px;
@@ -83,18 +102,12 @@ form input[type=submit]{
 .logo img{
     margin-top: 00px;
 }
-.mostrar{
-    position: fixed;
-    margin-top: -125px;
-}
 .usuario{
     align-items: center;
     margin-left: 55px;
 }
-.pre-matricula{
-    margin-left: 70px;
-    margin-top: 25px;
-}
+
+
 
 .wrapper {
     
@@ -196,10 +209,15 @@ form input[type=submit]{
   color: blanchedalmond;
 }
 #campo-email{
-  margin-top: 15px;
+  margin-top: -25px;
   height: 30px;
   width: 300px;
   border-radius: 5px;
   background-color: rgb(189, 184, 184);
 }
-
+.campo{
+  margin-top: -15px;
+}
+.email{
+  margin-top: -40px;
+}

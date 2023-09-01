@@ -6,7 +6,8 @@ $sql = "CREATE TABLE aluno (
     cpf VARCHAR (11),
     senha VARCHAR (30),
     email VARCHAR (50),
-    token VARCHAR (244)
+    token VARCHAR (244),
+    id_dados INT(10)
 
     
 )";

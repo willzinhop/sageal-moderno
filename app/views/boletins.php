@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
-    <link rel="stylesheet" href="boleto (1).css">
+    <link rel="stylesheet" href="../../public/style/boleto.css">
 </head>
  <select name="aluno" id="perfil">
   <option value="Willames Paulino">Willames Paulino da Silva</option>
@@ -16,7 +16,7 @@
    
 <body> 
   <div class="logo">
-    <img src="./imagens/1678492714157.png" width="230px" alt="">
+    <img src="../../public/imagens/1678492714157.png" width="230px" alt="">
   </div>
   
 <h2>Boletim Escolar</h2>
@@ -136,7 +136,7 @@
       <input type="button"><a href="#">Imprimir Boletim</a>
     </div>
     <div class="sair ">
-      <a href="inicio.html" title="Página inicial">Página inicial</a>
+      <a href="inicio.php" title="Página inicial">Página inicial</a>
   </div>
     
     <!----

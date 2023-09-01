@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+background-color: #022656;
+}
+
+form{
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    margin-top: 100px;
+    margin-left: 440px;
+    border-radius: 20px;
+}
+
+.h1{
+    color: white;
+    margin-left: 17.5px;
+}
+
+.input-redefinir{
+    display: block;
+    margin: 40px 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+#password{
+    display: block;
+    width: 80%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    border: 0;
+    border-bottom: 2px solid #ccc; 
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;   
+    
+} 
+
+#confirm_password{
+    display: block;
+    width: 80%;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    border: 0;
+    border-bottom: 2px solid #ccc; 
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;   
+    
+}
+
+.butaoo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #1b2cc7;
+    font-size: 18px;
+    margin-left: 65px;
+    color: white;
+}

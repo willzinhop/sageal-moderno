@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sageal</title>
-    <link rel="stylesheet" href="calendario (1).css">
+    <link rel="stylesheet" href="../../public/style/calendario.css">
    
    <!-- </div>
         </div>
@@ -38,7 +38,7 @@
     <body>
 
       <div class="logo">
-        <img src="./imagens/1678492714157.png" width="230px" alt="">
+        <img src="../../public/imagens/1678492714157.png" width="230px" alt="">
       </div>
       <h1 class="cale">Calendário - Março</h1>
       <table>
@@ -111,7 +111,7 @@
         de acordo com o ano letivo.
       </p>
       <div class="sair ">
-        <a href="inicio.html" title="Página Inicial">Voltar a página inicial</a>
+        <a href="inicio.php" title="Página Inicial">Voltar a página inicial</a>
     </div>
     <?php 
         session_start();

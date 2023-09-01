@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../public/style/redefinir.css">
+
     <title>Redefina a sua senha</title>
 </head>
 <body>
@@ -25,13 +27,15 @@
 
 <form action = "" method = "POST">
 
-        <legend>Confirmação de Senha </legend>
-
-        <input type="password" placeholder="Senha" name="senha" id="password" required>
+    <div class="input-redefinir">
+        <div class ="h1">
+        <h1>Redefinição De Senha</h1> <br>
+        </div>
+        <input type="password" placeholder="Senha" name="senha" id="password" required> <br>
         <input type="password" placeholder="Confirme Senha" name="confirme" id="confirm_password" required>
+        <button type="submit" name="att" class="butaoo">Confirmar</button>
 
-        <button type="submit" name="att" class="btn">Confirmar</button>
-    
+    </div>
 </form>
 
 <script>
