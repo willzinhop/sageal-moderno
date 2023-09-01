@@ -69,7 +69,7 @@ function logar(){
   var senha = document.getElementById('senha').value;
 
   if(login == "12345678901" && senha == "12345678"){
-    location.href = "inicio.html";
+    location.href = "inicio.php";
   }else{
     
   }

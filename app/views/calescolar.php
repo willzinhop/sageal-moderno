@@ -111,7 +111,7 @@
         de acordo com o ano letivo.
       </p>
       <div class="sair ">
-        <a href="inicio.html" title="Página Inicial">Voltar a página inicial</a>
+        <a href="inicio.php" title="Página Inicial">Voltar a página inicial</a>
     </div>
 </body>
 </html>

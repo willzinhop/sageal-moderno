@@ -79,7 +79,7 @@
     </div>
         
         <div class="sair">
-        <a href="inicio.html" title="Página Inicial.">Página inicial</a>
+        <a href="inicio.php" title="Página Inicial.">Página inicial</a>
         </div>
         
     

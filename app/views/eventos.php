@@ -10,7 +10,7 @@
 
 <body>
   <div class="logo">
-    <a href="login.html"><img src="./imagens/1678492714157.png" width="230px" title="Página Inicial" alt=""></a>
+    <a href="login.php"><img src="./imagens/1678492714157.png" width="230px" title="Página Inicial" alt=""></a>
   </div>
 
   <div class="perfil">
@@ -63,7 +63,7 @@
     </div>
 
      <div class="sair ">
-      <a href="inicio.html">Voltar a página inicial</a>
+      <a href="inicio.php">Voltar a página inicial</a>
      </div>
     
 </body>

@@ -46,33 +46,33 @@
         </select>
     </div> 
       <div class="logo">
-        <a href="login.html"><img src="./imagens/1678492714157.png" width="230px" alt=""></a>
+        <a href="login.php"><img src="./imagens/1678492714157.png" width="230px" alt=""></a>
       </div>
         <!----
          <div class="perfil">
             <img src="./imagens/perfil-removebg-preview.png" width="300px" alt="">
          </div> -->
          <div class="dados">
-            <a href="areaestudantil (1).html"><img src="./imagens/AREA-DO-ESTUDANTE (1).jpg" alt=""></a>
+            <a href="areaestudantil (1).php"><img src="./imagens/AREA-DO-ESTUDANTE (1).jpg" alt=""></a>
          </div>
          <div class="plano ">
-            <a href="plano-estudos.html"><img src="./imagens/plano.png" alt=""></a>
+            <a href="plano-estudos.php"><img src="./imagens/plano.png" alt=""></a>
          </div>
 
          <div class="boletim ">
-            <a href="boletins (1).html"><img src="./imagens/boletim.png" alt=""></a>
+            <a href="boletins (1).php"><img src="./imagens/boletim.png" alt=""></a>
          </div>
 
          <DIV class="eventos ">
-            <a href="eventos (1).html"><img src="./imagens/eventos.png" alt=""></a>
+            <a href="eventos (1).php"><img src="./imagens/eventos.png" alt=""></a>
          </DIV>
 
          <DIv class="cal ">
-            <a href="calescolar (1).html"><img src="./imagens/calendario.png" alt=""></a>
+            <a href="calescolar (1).php"><img src="./imagens/calendario.png" alt=""></a>
          </DIv>
 
          <div class="horario">
-            <a href="horarioescolar (1).html"><img src="./imagens/horario.png" alt=""></a>
+            <a href="horarioescolar (1).php"><img src="./imagens/horario.png" alt=""></a>
          </div>
 
             

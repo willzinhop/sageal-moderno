@@ -136,7 +136,7 @@
       <input type="button"><a href="#">Imprimir Boletim</a>
     </div>
     <div class="sair ">
-      <a href="inicio.html" title="Página inicial">Página inicial</a>
+      <a href="inicio.php" title="Página inicial">Página inicial</a>
   </div>
     
     <!----

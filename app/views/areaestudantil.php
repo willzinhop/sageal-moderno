@@ -100,7 +100,7 @@
         </table>
     </form>
     <div class="sair transitionSize">
-        <a href="inicio.html">Voltar a página Inicial</a>
+        <a href="inicio.php">Voltar a página Inicial</a>
     </div>
 
 </body>
