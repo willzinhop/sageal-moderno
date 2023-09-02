@@ -80,14 +80,7 @@
                 <input type="password" placeholder="Senha" name="senha" class="input" >
                 
               </div>
-              <div class="usuario">
-                <select name="Willames" id="Willames">
-                    <option value="Selecione a opção">Selecione a opção </option>
-                    <option value="Direção">Direção</option> 
-                    <option value="Estudante">Estudante</option>
-                    <option value="Seduc">Seduc</option>
-                </select>
-            </div>
+           
               <input type="submit" id="btn" name = "enviar" >
               
               <div class="esqueci">
@@ -154,7 +147,7 @@ if (isset($_POST['enviar1'])){
     </form>
     </div>
   
-             
+   
     
    
 </body>
