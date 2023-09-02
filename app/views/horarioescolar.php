@@ -25,15 +25,21 @@
 
 
     <div class="manha">
-        <a href="#"><img src="../../public/imagens/manha.png" title="Horário da manhã" width="230px" alt=""></a>
+        <a href="DIAS.php"><img src="../../public/imagens/manha.png" title="Horário da manhã" width="230px" alt=""></a>
     </div>
 
     <div class="tarde">
-        <a href="#"><img src="../../public/imagens/tarde.png" title="Horário da tarde" width="230px" alt=""></a>
+        <a href="DIAS.php"><img src="../../public/imagens/tarde.png" title="Horário da tarde" width="230px" alt=""></a>
     </div>
 
     <div class="noite">
-        <a href="#"><img src="../../public/imagens/noite.png" title="Horário da noite" width="230px" alt=""></a>
+        <a href="DIAS.php"><img src="../../public/imagens/noite.png" title="Horário da noite" width="230px" alt=""></a>
     </div>
+    <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

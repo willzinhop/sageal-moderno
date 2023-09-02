@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano de Estudos - Sageal</title>
-    <link rel="stylesheet" href="plano-estudos.css">
+    <link rel="stylesheet" href="../../public/style/plano-estudos.css">
 </head>
      <div class="logo">
-        <img src="./imagens/1678492714157.png" width="230px" alt="">
+        <img src="../../public/imagens/1678492714157.png" width="230px" alt="">
      </div>
     <div class="usuario">
         <select name="Willames" id="estudante">
@@ -82,6 +82,11 @@
         <a href="inicio.php" title="Página Inicial.">Página inicial</a>
         </div>
         
-    
+        <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

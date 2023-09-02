@@ -73,19 +73,19 @@
             </tr>
 
             <?php
-            $mysqli = mysqli_connect("localhost", "root", "", "teste");
+            $mysqli = mysqli_connect("localhost", "root", "", "sageal");
 
             if (!$mysqli) {
                 die("Erro na conexão: " . mysqli_connect_error());
             }
 
-            $sql = "SELECT `horario`, `aula`, `professor`, `serie` FROM `tabelareal` WHERE dia = '$_GET[dia]' AND serie ='EJA' ORDER BY horario"; 
+            $sql = "SELECT * FROM horario WHERE dia = '$_GET[dia]' AND serie ='EJA' ORDER BY hora"; 
             $result = mysqli_query($mysqli, $sql);
             
             if ($result) {
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<tr>";
-                    echo "<td>" . $row["horario"] . "</td>";
+                    echo "<td>" . $row["hora"] . "</td>";
                     echo "<td>" . $row["aula"] . "</td>";
                     echo "<td>" . $row["professor"] . "</td>";
                     echo "<td>" . $row["serie"] . "</td>";

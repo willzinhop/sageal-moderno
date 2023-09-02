@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Área do Estudante</title>
-    <link rel="stylesheet" href="areaestudante (1).css">
+    <link rel="stylesheet" href="../../public/style/areaestudante.css">
 </head>
 
 <body>
     <h2>Dados do aluno:</h2>
     <div class="aluno">
-        <img src="./imagens/oi-removebg-preview.png" height="500px" width="550px" alt="">
+        <img src="../../public/imagens/oi-removebg-preview.png" height="500px" width="550px" alt="">
     </div>
     <form>
        
@@ -102,6 +102,11 @@
     <div class="sair transitionSize">
         <a href="inicio.php">Voltar a página Inicial</a>
     </div>
-
+    <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>

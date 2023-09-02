@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boletim</title>
-    <link rel="stylesheet" href="boleto (1).css">
+    <link rel="stylesheet" href="../../public/style/boleto.css">
 </head>
  <select name="aluno" id="perfil">
   <option value="Willames Paulino">Willames Paulino da Silva</option>
@@ -16,7 +16,7 @@
    
 <body> 
   <div class="logo">
-    <img src="./imagens/1678492714157.png" width="230px" alt="">
+    <img src="../../public/imagens/1678492714157.png" width="230px" alt="">
   </div>
   
 <h2>Boletim Escolar</h2>
@@ -143,5 +143,11 @@
 <p class="obs">A nota necessária para ser aprovado no bimestre é 6. <br>
   Para calcular a média anual é realizada a soma de todas as notas dos quatro bimestres e a divisão delas por 4. <br> A nota mínima da média anual para ser aprovado também é 6.</p> -->
   -
+  <?php 
+        session_start();
+        if(!isset($_SESSION['logado'])) {
+            header("Location: login.php");
+        }
+        ?>
 </body>
 </html>
