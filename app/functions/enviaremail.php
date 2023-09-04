@@ -5,8 +5,8 @@ function email($email, $token){
     $link = '<a href="localhost/sageal-moderno/app/views/redefinir.php?token=\''.$token.'\'">clique aqui</a>';
 
     $para = $email;
-    $assunto = "Teste simples de envio de email via PHP";
-    $corpo = "$link";
+    $assunto = "Sageal Moderno - Redefinição de Senha";
+    $corpo = "Foi solicitado uma redefinição de senha, se não foi você, apenas ignore. Caso contrário, acesse esse link: $link";
    
     $headers = 'Content-Type: text/html';
     

@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sageal</title>
-    <link rel="stylesheet" href="../../public/style/inc.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap
+    <link rel="stylesheet" href="../../public/style/inc.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Oswald:wght@500&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400&display=swap
 ">
 </head>
 <form>
@@ -35,16 +36,20 @@
 </header> -->
 </form>
 <body> 
-    <div class="perfil">
-    </div>
-    <div class="usuario">
-        <select name="Willames" id="Willames">
-            <option value="Willames Paulino">Willames Paulino da Silva</option>
-            <option value="Trocar de Senha">&#x1F512 Trocar de Senha</option> 
-            <option value="Ajuda">&#x1F481 Ajuda com o site</option>
-            <option value="Sair">&#x274C Sair do Sageal</option>
-        </select>
-    </div> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="login.php">Sair do Sageal</a></li>
+  </ul>
+</div>
+
+ 
+
       <div class="logo">
         <a href="login.php"><img src="../../public/imagens/1678492714157.png" width="230px" alt=""></a>
       </div>
@@ -86,9 +91,9 @@
             <img src="../../public/imagens/escola10.png" width="300px" alt="Escola 10">
         
             <img src="../../public/imagens/marco.png" width="300px" alt="Março">
+        
             
         </div>
-        <a href="login.php">Logout</a>
         
         <?php 
         session_start();
@@ -97,4 +102,5 @@
         }
         ?>
 </body>
+
 </html>
