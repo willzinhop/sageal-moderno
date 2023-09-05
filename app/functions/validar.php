@@ -1,9 +1,11 @@
 <?php
-$senha = $_POST['senha'];
-$cpf = $_POST['cpf'];
+    
 function validarCPF($cpf) {
   // Verifica se o número foi informado
+  
+
   if (empty($cpf)) {
+    
     return false;
   }
 
@@ -14,9 +16,10 @@ function validarCPF($cpf) {
 
   // Verifica se o número de dígitos informados é igual a 11
   if (strlen($cpf) != 11) {
+    
     return false;
   }
-
+ 
 
   // Verifica se todos os dígitos são iguais
   if (str_repeat($cpf, 11) === $cpf) {
@@ -48,75 +51,15 @@ function validarCPF($cpf) {
     $digito2 = 11 - $digito2;
   }
 
-
+  
   // Verifica se os dígitos verificadores são iguais aos informados
-  if ($cpf[9] != $digito1 || $cpf[10] != $digito2) {
+  if ($cpf[9] != $digito1 && $cpf[10] != $digito2) {
+
     return false;
   }
-
 
   // O CPF é válido
   return true;
+
 }
-
-
-function validarSenha($senha) {
-  // Verifica se a senha está vazia
-  if (empty($senha)) {
-    return false;
-  }
-
-
-  // Verifica se a senha tem pelo menos 8 caracteres
-  if (strlen($senha) < 8) {
-    return false;
-  }
-
-
-  // Verifica se a senha contém pelo menos 1 letra maiúscula
-  if (!preg_match('/[A-Z]+/', $senha)) {
-    return false;
-  }
-
-
-  // Verifica se a senha contém pelo menos 1 letra minúscula
-  if (!preg_match('/[a-z]+/', $senha)) {
-    return false;
-  }
-
-
-  // Verifica se a senha contém pelo menos 1 número
-  if (!preg_match('/\d+/', $senha)){
-return false;
-}
-// Verifica se a senha não contém sequências de caracteres comuns
-if (preg_match('/[!@#$%^&*()_+]/', $senha)) {
-    return false;
-  }
-
-
-  // A senha é válida
-  return true;
-}
-
-
-// Se o CPF e a senha forem válidos, entrar na tela login.html"
-if (empty($_POST['cpf']) && empty($_POST['senha'])) {
-  echo "Por favor, preencha todos os campos.";
-}
-else if(empty($_POST['cpf'])){
-  echo("Por favor, preencha todos os campos");
-}
-else if(empty($_POST['senha'])){
-  echo("Por favor, preencha todos os campos");
-}
-
-else{
-  $senha = $_POST['senha'];
-  $cpf = $_POST['cpf'];
- if (validarCPF($cpf) && validarSenha($senha)) {
-  header('Location: inicio.html');
-}  else {
-  echo "Senha ou CPF inválido";
-}}
  ?>

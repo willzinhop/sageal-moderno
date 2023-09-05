@@ -20,7 +20,7 @@ if (isset($_POST['enviar'])){
     $dados = mysqli_query($sageal, $sql);
     $array = mysqli_fetch_array($dados);
     if(mysqli_num_rows($dados)){
-        require_once("../functions/teste.php");
+        require_once("../functions/enviaremail.php");
         $token = uniqid();
         $sql = "UPDATE aluno SET token = '$token' WHERE id_usuario = '$array[id_usuario]'";
         email($array["email"], $token);
