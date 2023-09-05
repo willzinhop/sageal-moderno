@@ -143,3 +143,12 @@ h3{
     padding: 10px;
     border-radius: 5px;
 }
+.table{
+    --bs-table-hover-bg: rgb(30, 12, 85);
+    color: white;
+
+}
+#criarPlano{
+    padding-right: 10px;
+    text-align: right;
+}
