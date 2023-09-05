@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../../public/style/lllogin.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   
     <title>Sageal</title>
 
 </head>
@@ -71,32 +72,87 @@
     <div class="input-single">
                 
                 <input type="text" placeholder="Login" name="cpf" class="input" autocomplete="off" maxlength="14">
-                  
-                </div>
-  
-                <div class="senha-de-acesso">
-  
+                
+                
+              </div>
+
+              <div class="senha-de-acesso">
                 <input type="password" placeholder="Senha" name="senha" class="input" >
-                  
-                </div>
+                
+              </div>
+           
+              <input type="submit" id="btn" name = "enviar" >
+              
+              <div class="esqueci">
+                  <a href="#demo-modal">Esqueceu a senha</a>
+            </div>
+    </form>
             
-                <div class = "vtnc">         
-                <input type="submit" id="btn" name = "enviar" >
-                </div>
               
-                <div class="esqueceu-a-senha" class = "Es">
-  
-                  <a href="redefinicao.php">Esqueceu a Senha</a>
-  
-                </div>
-              
+            
+
+
+
+
+  <form action="" method="POST">
+  <div id="demo-modal" class="modal">
+  <div class="modal__content">
+    <h1>Redefinição de senha</h1>
+    <hr>
+    <div class="campo">
+    <p>
+      Para a redefinição de senha, <br>adicione o email no campo abaixo.
+    </p>
+  <br>
+   
+        <div class="email">
+    <label for="email">Digite seu e-mail: </label> <br>
+    <input type="text" id="campo-email" placeholder="e-mail" name="email"></input> <br>
+    </div>
+    </div>
     
+    <button type="button" onclick="location.href='login.php'" id="botao_fechar" name="fechar1">Fechar</button>
+    <button type="submit" id="botao-enviar" name="enviar1">Enviar</button>
+       
+
+    </form>
+    
+    
+    </div>
+  </div>
+</div>
 
 
+<?php 
+if (isset($_POST['enviar1'])){
+    require_once("../../database/connect.php");
+    $email = mysqli_escape_string($sageal, $_POST['email']);
+    $sql = "SELECT * FROM aluno WHERE email = '$email'";
+    $dados = mysqli_query($sageal, $sql);
+    $array = mysqli_fetch_array($dados);
+    if(mysqli_num_rows($dados)){
+        require_once("../functions/enviaremail.php");
+        $token = uniqid();
+        $sql = "UPDATE aluno SET token = '$token' WHERE id_usuario = '$array[id_usuario]'";
+        email($array["email"], $token);
+        mysqli_query($sageal, $sql);
+        
+
+    }
+}
+?>
+        
+    </form>
+  
+    </form>
+    </div>
+  
+   
+    
    
 </body>
 
-</form> 
+ 
 
 
 </html>

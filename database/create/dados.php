@@ -1,16 +1,17 @@
 <?php 
-    $sql = "CREATE TABLE tabeladedado (
-  id_usuario INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    $sql = "CREATE TABLE dados (
+  id_dados INT(10)  AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR (50),
-  token VARCHAR (244),
   nome VARCHAR (300),
   nascimento VARCHAR (10),
   matricula VARCHAR (100),
   serie VARCHAR (30),
   statusdamatricula VARCHAR (300),
-  turno VARCHAR (30),
+  turno VARCHAR (30), 
   rg VARCHAR (30),
-  id_aluno INT (10)
+  id_resp INT (10)
+  
+
 )";
 
 require_once("../connect.php");
