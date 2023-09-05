@@ -7,7 +7,8 @@ $sql = "CREATE TABLE aluno (
     senha VARCHAR (30),
     email VARCHAR (50),
     token VARCHAR (244),
-    id_dados INT(10)
+    id_dados INT(10),
+    Foreign key (id_dados) references dados(id_dados)
 
     
 )";

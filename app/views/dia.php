@@ -74,12 +74,16 @@
 
             <?php
             $mysqli = mysqli_connect("localhost", "root", "", "sageal");
+            session_start();
+            $id = $_SESSION['logado'];
+            
+            
 
             if (!$mysqli) {
                 die("Erro na conexão: " . mysqli_connect_error());
             }
 
-            $sql = "SELECT * FROM horario WHERE dia = '$_GET[dia]' AND serie ='EJA' ORDER BY hora"; 
+            $sql = "SELECT * FROM horario WHERE dia = '$_GET[dia]' AND id_aluno='$id' ORDER BY hora"; 
             $result = mysqli_query($mysqli, $sql);
             
             if ($result) {

@@ -7,12 +7,26 @@
     <title>Área do Estudante</title>
     <link rel="stylesheet" href="../../public/style/areaestudante.css">
 </head>
+<?php 
 
+
+?>
 <body>
     <h2>Dados do aluno:</h2>
     <div class="aluno">
-        <img src="../../public/imagens/oi-removebg-preview.png" height="500px" width="550px" alt="">
+        <img src="./imagens/oi-removebg-preview.png" height="500px" width="550px" alt="">
     </div>
+
+    <?php 
+        require_once("../../database/connect.php");
+
+        $sql = "SELECT * FROM dados where id_dados = 1";
+        $consulta = mysqli_query($sageal , $sql);
+
+
+
+        $dados = mysqli_fetch_array($consulta);
+    ?>
     <form>
        
         <table class="tabela1">
@@ -20,7 +34,7 @@
                 <th>Nome:</th>
             </tr>
             <tr>
-            <td>Willames Paulino da Silva</td>
+            <td><?php echo("$dados[nome]");?></td>
             </tr>
         </table>
 
@@ -29,7 +43,7 @@
                 <th>Data de nascimento:</th>
             </tr>
             <tr>
-                <td>&#x1F5D3 19/01/2006</td>
+                <td><?php echo("$dados[nascimento]");?></td>
             </tr>
         </table>
 
@@ -38,7 +52,8 @@
                 <th>Matrícula:</th>
             </tr>
             <tr>
-                <td>000030</td>
+                <td><?php echo("$dados[matricula]");?></td>
+                
             </tr>
         </table>
 
@@ -47,7 +62,7 @@
                 <th>Ano/Série/Módulo/Etapa:</th>
             </tr>
             <tr>
-                <td>Ensino Médio - 3ª Série</td>
+                <td><?php echo("$dados[serie]");?></td>
             </tr>
         </table>
 
@@ -56,7 +71,7 @@
                 <th>Status da Matrícula:</th>
             </tr>
             <tr>
-                <td>Em curso</td>
+                <td><?php echo("$dados[statusdamatricula]");?></td>
             </tr>
         </table>
 
@@ -65,7 +80,7 @@
                 <th>Turno:</th>
             </tr>
             <tr>
-                <td>Matutino</td>
+                <td><?php echo("$dados[turno]");?></td>
             </tr>
         </table>
 
@@ -80,10 +95,11 @@
 
         <table class="tabela8">
             <tr>
-                <th>Número:</th>
+                <th>CPF: </th>
             </tr>
             <tr>
-                <td>51</td>
+                <!-- colocar o cpf -->
+                <td></td> 
             </tr>
         </table>
 
@@ -100,13 +116,13 @@
         </table>
     </form>
     <div class="sair transitionSize">
-        <a href="inicio.php">Voltar a página Inicial</a>
+        <a href="inicio.html">Voltar a página Inicial</a>
     </div>
     <?php 
-        session_start();
-        if(!isset($_SESSION['logado'])) {
-            header("Location: login.php");
-        }
+        // session_start();
+        // if(!isset($_SESSION['logado'])) {
+        //     header("Location: login.php");
+        // }
         ?>
 </body>
 </html>
